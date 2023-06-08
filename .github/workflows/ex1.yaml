@@ -10,7 +10,8 @@ jobs:
         uses: actions/checkout@v3
       - name: setup node
         uses: actions/setup-node@v3
-        with: node-version: 'lts/*'
+        with:
+          node-version: 'lts/*'
       - name: run npm install
         run: npm install
   job2:
@@ -21,6 +22,7 @@ jobs:
         uses: actions/checkout@v3
       - name: setup node
         uses: actions/setup-node@v3
-        with: node-version: 'lts/*'
+        with:
+          node-version: 'lts/*'
       - name: run npm test
         run: npm test

@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: execute curl
-          run:
+          run: |
             curl -L \
             -X POST \
             -H "Accept: application/vnd.github+json" \
